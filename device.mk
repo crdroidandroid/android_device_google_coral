@@ -460,6 +460,10 @@ PRODUCT_PACKAGES += \
     libOmxVenc \
     libc2dcolorconvert
 
+# Refresh rate override feature
+PRODUCT_PRODUCT_PROPERTIES += \
+    ro.surface_flinger.enable_frame_rate_override=true
+
 # Enable Codec 2.0
 PRODUCT_PROPERTY_OVERRIDES += \
     debug.media.codec2=2 \
