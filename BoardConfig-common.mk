@@ -234,6 +234,9 @@ BOARD_GOOGLE_DYNAMIC_PARTITIONS_SIZE := 4873781248
 # Set error limit to BOARD_SUPER_PARTITON_SIZE - 100MB
 BOARD_SUPER_PARTITION_ERROR_LIMIT := 9651093504
 
+# Fix artifact path requirements error
+DISABLE_ARTIFACT_PATH_REQUIREMENTS := true
+
 # Testing related defines
 BOARD_PERFSETUP_SCRIPT := platform_testing/scripts/perf-setup/c2f2-setup.sh
 
