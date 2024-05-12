@@ -14,6 +14,8 @@
 # limitations under the License.
 #
 
+include device/google/coral/device-custom.mk
+
 LOCAL_PATH := device/google/coral
 
 PRODUCT_VENDOR_MOVE_ENABLED := true
@@ -459,10 +461,6 @@ PRODUCT_PACKAGES += \
     libOmxVdec \
     libOmxVenc \
     libc2dcolorconvert
-
-# Refresh rate override feature
-PRODUCT_PRODUCT_PROPERTIES += \
-    ro.surface_flinger.enable_frame_rate_override=true
 
 # Enable Codec 2.0
 PRODUCT_PROPERTY_OVERRIDES += \
